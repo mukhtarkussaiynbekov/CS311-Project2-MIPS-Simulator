@@ -58,7 +58,7 @@ void load_program(char *program_filename) {
 	    NUM_INST = text_size/4;
 	    //initial memory allocation of text segment
 	    INST_INFO = malloc(sizeof(instruction)*(text_size/4));
-	    init_inst_info(text_size/4);
+	    init_inst_info();
 	}
 
 	else if(flag == 1)

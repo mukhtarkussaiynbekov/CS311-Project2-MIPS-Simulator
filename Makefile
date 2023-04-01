@@ -1,5 +1,5 @@
-cs311sim: cs311.c util.c parse.c run.c
-	gcc -g -O2 $^ -o $@
+cs311sim: cs311.cpp util.cpp parse.cpp run.cpp
+	g++ -g -O2 $^ -o $@ -fpermissive
 
 .PHONY: clean test help
 clean:
